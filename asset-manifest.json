@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sean-yang/static/css/main.9d734070.css",
+    "main.js": "/sean-yang/static/js/main.1c295efa.js",
+    "static/js/453.459d3880.chunk.js": "/sean-yang/static/js/453.459d3880.chunk.js",
+    "static/media/pfp.jpg": "/sean-yang/static/media/pfp.ca593914331972f1def8.jpg",
+    "index.html": "/sean-yang/index.html",
+    "main.9d734070.css.map": "/sean-yang/static/css/main.9d734070.css.map",
+    "main.1c295efa.js.map": "/sean-yang/static/js/main.1c295efa.js.map",
+    "453.459d3880.chunk.js.map": "/sean-yang/static/js/453.459d3880.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d734070.css",
+    "static/js/main.1c295efa.js"
+  ]
+}
