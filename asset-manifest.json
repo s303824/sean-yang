@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sean-yang/static/css/main.9d734070.css",
-    "main.js": "/sean-yang/static/js/main.fee2572c.js",
+    "main.js": "/sean-yang/static/js/main.aa16b495.js",
     "static/js/453.459d3880.chunk.js": "/sean-yang/static/js/453.459d3880.chunk.js",
     "static/media/pfp.jpg": "/sean-yang/static/media/pfp.ca593914331972f1def8.jpg",
     "index.html": "/sean-yang/index.html",
     "main.9d734070.css.map": "/sean-yang/static/css/main.9d734070.css.map",
-    "main.fee2572c.js.map": "/sean-yang/static/js/main.fee2572c.js.map",
+    "main.aa16b495.js.map": "/sean-yang/static/js/main.aa16b495.js.map",
     "453.459d3880.chunk.js.map": "/sean-yang/static/js/453.459d3880.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d734070.css",
-    "static/js/main.fee2572c.js"
+    "static/js/main.aa16b495.js"
   ]
 }
