@@ -4,7 +4,7 @@ import '../App.css';
 
 function AboutSection(){
     return(
-        <Box sx={{display:"flex", flexDirection:"row" , padding:4, justifyContent:"space-evenly"}}>
+        <Box sx={{display:"flex", flexDirection:"row" , padding:4, justifyContent:"space-around"}}>
             <Box  className="App-logo" sx={{borderRadius: '50%' ,overflow:'hidden', backgroundClip:'border-box'}}>
                 <img src={logo} className="App-logo"alt="profile pic"/>
             </Box>
