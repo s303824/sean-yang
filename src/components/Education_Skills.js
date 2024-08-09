@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import logo from '../pfp.jpg';
 import '../App.css';
 
 function Education_Skills(){

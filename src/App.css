@@ -1,9 +1,20 @@
 .App {
-
+  box-sizing: border-box;
 }
 
 .App-logo {
-  height: 40vmin;}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40vh;
+  aspect-ratio: 1/1;  
+
+}
+
+.App-logo img{
+  height:50vh;
+  clip-path: circle();
+}
 
 .App-header {
   background-color: #0c1536;
