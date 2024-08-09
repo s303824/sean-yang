@@ -10,7 +10,7 @@ function Education_Skills(){
                 <Typography variant="h5">Graduated 2023</Typography> 
             </Box>
             <Typography variant="h5">Bachelor of Science in Computer Science</Typography> 
-            <Typography >Blah Blah Blah</Typography> 
+            <Typography >Blah Blah Blah Blah</Typography> 
 
 
         </Box>
