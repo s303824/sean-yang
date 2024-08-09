@@ -53,7 +53,8 @@
 }
 
 .about{
-  display:inline;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .fa {
