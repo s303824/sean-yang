@@ -10,20 +10,13 @@
   height: 100%;
 }
 
-.App-logo {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  max-width: 50vh;
-  min-width: 50vh;
-  border-radius: '50%';
-  overflow:hidden;
-  background-clip: border-box;
-
+.image-container {
+  display: flexbox;
 }
 
-.App-logo img{
-  height:50vh;
+.image-container img{
+  max-height: 30vh;
+  min-height: 30vh;
   clip-path: circle();
 }
 
@@ -52,9 +45,41 @@
   background-color: #282a31;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width:632px){
   /* For mobile phones: */
-  about {
-    display:grid;
+  .about {
+    display:inline;
   }
+}
+
+.about{
+  display:inline;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #0072b1;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-itchio {
+  background: #fa5c5c;
+  color:white;
 }

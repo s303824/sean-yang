@@ -4,7 +4,7 @@ import '../App.css';
 
 function CircleImage(){
 return(
-    <Box  className="App-logo" >
+    <Box className="image-container">
         <img src={logo} alt="profile pic"/>
     </Box>
 )
