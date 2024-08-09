@@ -6,9 +6,9 @@ function TopBar(){
     return (
         <Box sx={{ flexGrow: 1  }}>
           <AppBar position="sticky">
-            <Toolbar sx={{bgcolor:"#282a31"}}>
+            <Toolbar className='bar'>
               <div>
-              <Typography variant="h3" sx={{ color: "#c45148", flexGrow: 1, textAlign:"center" , padding:2}}>
+              <Typography variant="h2" className="title" sx={{flexGrow: 1, textAlign:"center" , padding:2}}>
                     Sean Yang
                 </Typography>
               </div>

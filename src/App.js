@@ -1,4 +1,3 @@
-import logo from './pfp.jpg';
 import './App.css';
 import TopBar from './components/TopBar';
 import AboutSection from './components/AboutSection'

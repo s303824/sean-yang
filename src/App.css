@@ -16,6 +16,9 @@
   align-items: center;
   max-width: 50vh;
   min-width: 50vh;
+  border-radius: '50%';
+  overflow:hidden;
+  background-clip: border-box;
 
 }
 
@@ -33,16 +36,25 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #91fdc3;;
+
 }
 
-.App-link {
+.title{
+  color: #91a1fd;
+}
+
+.subtitle {
   color: #c45148;
+
+}
+
+.bar{
+  background-color: #282a31;
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  App-logo{
-    display: inline-block;
-    width: 100%;
+  about {
+    display:grid;
   }
 }

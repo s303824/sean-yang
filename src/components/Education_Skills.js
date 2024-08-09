@@ -4,6 +4,8 @@ import '../App.css';
 function Education_Skills(){
     return(
         <Box sx={{display:"flex", flexDirection:"column" , padding:4, alignContent:"space-between"}}>
+            <Typography variant="h3" className="subtitle" sx={{marginBottom:4}}>Education</Typography>
+
             <Box sx={{display:"flex", flexDirection:"row" , justifyContent:"space-between"}}>
                 <Typography variant="h4">Stony Brook Univerity</Typography> 
                 <Typography variant="h5">Graduated 2023</Typography> 
