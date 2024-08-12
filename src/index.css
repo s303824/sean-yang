@@ -1,7 +1,8 @@
 @font-face {
-  font-family: inconsolata;
-  src: url(../public/inconsolata.regular.ttf);
+  font-family: 'inconsolata';
+  src: url(./inconsolata.regular.ttf);
 }
+
 
 body {
   margin: 0;

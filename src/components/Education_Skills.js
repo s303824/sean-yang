@@ -1,19 +1,21 @@
 import { Box, Typography } from "@mui/material";
+import TechnicalSection from './TechnicalSection.js';
 import '../App.css';
 
 function Education_Skills(){
     return(
-        <Box sx={{display:"flex", flexDirection:"column" , padding:4, alignContent:"space-between"}}>
-            <Typography variant="h3" className="subtitle" sx={{marginBottom:4}}>Education</Typography>
+        <Box sx={{display:"block", flexDirection:"column" , alignContent:"space-between", backgroundColor:'black', padding:4}}>
+            <Typography variant="h3" className="subtitle" fontFamily={'inconsolata'}>Education and Main Technical Skills</Typography>
 
-            <Box sx={{display:"flex", flexDirection:"row" , justifyContent:"space-between"}}>
-                <Typography variant="h4">Stony Brook Univerity</Typography> 
-                <Typography variant="h5">Graduated 2023</Typography> 
+            <Box sx={{ flexDirection:"column" , alignContent:"space-between"}}>
+                <Box sx={{display:"flex", flexDirection:"row" , justifyContent:"space-between"}}>
+                    <Typography variant="h4" fontFamily={'inconsolata'}>Stony Brook Univerity</Typography> 
+                    <Typography variant="h5" fontFamily={'inconsolata'}>Graduated 2023</Typography> 
+                </Box>
+                <Typography variant="h5" fontFamily={'inconsolata'}>Bachelor of Science in Computer Science</Typography> 
             </Box>
-            <Typography variant="h5">Bachelor of Science in Computer Science</Typography> 
-            <Typography >Blah Blah Blah Blah</Typography> 
 
-
+            <TechnicalSection/>
         </Box>
     )
 }

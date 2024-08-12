@@ -1,11 +1,10 @@
 import { Box } from "@mui/material";
-import logo from '../profile.jpg';
 import '../App.css';
 
-function CircleImage(){
-return(
+function CircleImage({image_file}){
+    return(
     <Box className="image-container">
-        <img src={logo} alt="profile pic"/>
+        <img src={image_file} alt="profile pic"/>
     </Box>
 )
 }

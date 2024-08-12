@@ -1,3 +1,8 @@
+.text {
+  font-family: 'inconsolata';
+  font-size: 16;
+}
+
 .App {
   box-sizing: border-box;
   padding:0;
@@ -83,4 +88,25 @@
 .fa-itchio {
   background: #fa5c5c;
   color:white;
+}
+
+.badge-list {
+	display: flex;
+	flex-wrap: wrap;
+  justify-items: center;
+  margin-top: 16px;
+}
+
+.badge-list .badge {
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: #000;
+	list-style: none;
+	padding: 8px;
+	border-radius: 8px;
+	border: 1px solid #c45148;
+	color: #c45148;
+	margin: 0 4px;
+	white-space: nowrap;
+	margin-bottom: 16px;
 }

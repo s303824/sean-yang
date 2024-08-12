@@ -6,7 +6,7 @@ function TopBar(){
         <Box sx={{position:"sticky", justifyContent:'left'}}>
           <AppBar position="sticky">
             <Toolbar className='bar'>
-              <Typography variant="h2" className="title" sx={{flexGrow: 1, textAlign:"left" , padding:2}}>
+              <Typography variant="h2" className="title" sx={{flexGrow: 1, textAlign:"left" , padding:2}} fontFamily={'inconsolata'}>
                 Sean Yang
               </Typography>
                 <ButtonGroup sx={{margin:2}}>
