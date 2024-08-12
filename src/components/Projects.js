@@ -11,8 +11,8 @@ function Projects(){
         <Box sx={{display:"flex", flexDirection:"column" , padding:4, alignContent:"space-between"}}>
             <Typography variant="h3"className="subtitle" sx={{marginBottom:4}} fontFamily={'inconsolata'}>Projects</Typography>
             <ProjectCard title={"All Terrain Armor"} subtitle={"Game Programmer"} description={"Stuff"} page_link={'https://alimen6.itch.io/all-terrain-armor'} picture={ATA}/>
-            <ProjectCard title={"Devil's Advocate"} subtitle={"Game Programmer"} description={"Things"} page_link={'https://xander1230.itch.io/us-and-them'} picture={DA}/>
-            <ProjectCard title={"Us and Them"} subtitle={"Game Programmer"} description={"Activities"} page_link={'https://spectradev.itch.io/devilsadvocate'} picture={UT}/>
+            <ProjectCard title={"Devil's Advocate"} subtitle={"Game Programmer"} description={"Things"} page_link={'https://spectradev.itch.io/devilsadvocate'}  picture={DA}/>
+            <ProjectCard title={"Us and Them"} subtitle={"Game Programmer"} description={"Activities"} page_link={'https://xander1230.itch.io/us-and-them'} picture={UT}/>
         </Box>
     )
 }
