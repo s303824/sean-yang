@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sean-yang/static/css/main.acdfb955.css",
-    "main.js": "/sean-yang/static/js/main.ec530842.js",
+    "main.css": "/sean-yang/static/css/main.cb4aa1eb.css",
+    "main.js": "/sean-yang/static/js/main.f69123d8.js",
     "static/js/453.0ac44aa4.chunk.js": "/sean-yang/static/js/453.0ac44aa4.chunk.js",
     "static/media/profile.jpg": "/sean-yang/static/media/profile.a68af548dbe4ddffb762.jpg",
     "static/media/Sean_Yang_resume.pdf": "/sean-yang/static/media/Sean_Yang_resume.048044988fa4dc2e8de4.pdf",
@@ -11,12 +11,12 @@
     "static/media/us_and_them.png": "/sean-yang/static/media/us_and_them.a2a8cb3adffb1cc794e3.png",
     "static/media/ata.png": "/sean-yang/static/media/ata.54757de2f693702ebfc1.png",
     "index.html": "/sean-yang/index.html",
-    "main.acdfb955.css.map": "/sean-yang/static/css/main.acdfb955.css.map",
-    "main.ec530842.js.map": "/sean-yang/static/js/main.ec530842.js.map",
+    "main.cb4aa1eb.css.map": "/sean-yang/static/css/main.cb4aa1eb.css.map",
+    "main.f69123d8.js.map": "/sean-yang/static/js/main.f69123d8.js.map",
     "453.0ac44aa4.chunk.js.map": "/sean-yang/static/js/453.0ac44aa4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acdfb955.css",
-    "static/js/main.ec530842.js"
+    "static/css/main.cb4aa1eb.css",
+    "static/js/main.f69123d8.js"
   ]
 }
