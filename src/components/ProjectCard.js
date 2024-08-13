@@ -4,12 +4,13 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import '../App.css';
 
 export default function ProjectCard({title, subtitle, description, page_link, picture}) {
   const matches = useMediaQuery('(min-width:632px)');
   const isWrap = matches ? "nowrap": "wrap" 
   return (
-    <Card sx={{ marginBottom: '16px', backgroundColor:'grey'}}>
+    <Card sx={{ marginBottom: '16px', backgroundColor:'#282a31'}}>
         <CardContent>
 
             <Box className="project" sx={{flexWrap:isWrap}}>
@@ -17,15 +18,15 @@ export default function ProjectCard({title, subtitle, description, page_link, pi
                 <img src={picture}  alt='thumbnail'width="100%"/>
               </a>
                 <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
-                    <a href={page_link}  fontFamily={'inconsolata'} sx={{color: "#c45148"}}>
-                      <Typography variant='h4'>
+                    <a href={page_link} className='linkTitle' fontFamily='inconsolata' color='#c45148'>
+                      <Typography variant='h4'  color={"white"}>
                         {title}
                       </Typography>
                     </a>
-                    <Typography variant='h6' fontFamily={'inconsolata'}>
+                    <Typography variant='h6' fontFamily={'inconsolata'} color={"white"}>
                     {subtitle}
                     </Typography>
-                    <Typography variant="body2" fontFamily={'inconsolata'}>
+                    <Typography variant="body2" fontFamily={'inconsolata'} color={"white"}>
                     {description}
                     </Typography>
                 </Box>

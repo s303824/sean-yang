@@ -50,6 +50,17 @@ div .project {
 
 }
 
+.linkTitle {
+  text-decoration: none;
+
+}
+
+.linkTitle:hover {
+  color: white;
+  text-decoration: underline;
+
+}
+
 .title{
   color: #91a1fd;
 }
