@@ -131,12 +131,11 @@ display: inline;
 .badge-list .badge {
 	font-size: 1.125rem;
 	font-weight: 500;
-	color: #000;
 	list-style: none;
 	padding: 8px;
 	border-radius: 8px;
-	border: 1px solid #c45148;
-	color: #c45148;
+	border: 2px solid white;
+	color: white;
 	margin: 0 4px;
 	white-space: nowrap;
 	margin-bottom: 16px;
