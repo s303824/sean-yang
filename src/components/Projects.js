@@ -7,7 +7,7 @@ import UT from '../images/us_and_them.png'
 import DA from '../images/devil_advocate.png'
 
 function Projects(){
-    const ata_description = "This game is a first person mech shooter developed with a small team for MechJamV. I was responsible for much of the code base, especially UI, enemy ai, and gameplay mechanics."
+    const ata_description = "This game is a first person mech shooter developed with a small team for MechJamV. I was responsible for much of the code base, especially UI, enemy AI, and gameplay mechanics."
 
     const da_description = "Devil’s Advocate is a comedic adventure game inspired by Ace Attorney that I made in under 72 hours with a team of five as part of Ludum Dare 55 Jam."+
      "As one of two programmers working on this game, I was responsible for a majority of the code base including UI implementation, shaders, and a custom dialogue manager to handle dialogue,"+
