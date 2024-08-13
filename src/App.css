@@ -121,6 +121,11 @@ display: inline;
   color:white;
 }
 
+.fa-email {
+  background: grey;
+  color:white;
+}
+
 .badge-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -139,13 +144,4 @@ display: inline;
 	margin: 0 4px;
 	white-space: nowrap;
 	margin-bottom: 16px;
-}
-
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
 }

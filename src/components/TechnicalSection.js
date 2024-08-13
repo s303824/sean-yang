@@ -3,7 +3,6 @@ import '../App.css';
 import Badge from "./Badge";
 
 function TechnicalSection(){
-    const img_size = '64px'
     return(
         <Box className='badge-list'>
             <Badge subject={"MERN Stack"}/>
