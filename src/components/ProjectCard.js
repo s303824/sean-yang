@@ -23,7 +23,7 @@ export default function ProjectCard({title, subtitle, description, page_link, pi
                         {title}
                       </Typography>
                     </a>
-                    <Typography variant='h6' fontFamily={'inconsolata'} color={"white"}>
+                    <Typography variant='h6' fontFamily={'inconsolata'} color={"#91fdc3"}>
                     {subtitle}
                     </Typography>
                     <Typography variant="body2" fontFamily={'inconsolata'} color={"white"}>
