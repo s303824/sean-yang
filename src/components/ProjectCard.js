@@ -18,8 +18,8 @@ export default function ProjectCard({title, subtitle, description, page_link, pi
                 <img src={picture}  alt='thumbnail'width="100%"/>
               </a>
                 <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
-                    <a href={page_link} className='linkTitle' fontFamily='inconsolata' color='#c45148'>
-                      <Typography variant='h4'  color={"white"}>
+                    <a href={page_link} className='linkTitle' >
+                      <Typography variant='h4' fontFamily={'inconsolata'} color={"#c45148"}>
                         {title}
                       </Typography>
                     </a>
