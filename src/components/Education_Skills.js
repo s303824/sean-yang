@@ -5,7 +5,7 @@ import '../App.css';
 function Education_Skills(){
     return(
         <Box sx={{display:"block", flexDirection:"column" , alignContent:"space-between", backgroundColor:'black', padding:4}}>
-            <Typography variant="h3" className="subtitle" fontFamily={'inconsolata'}>Education and Main Technical Skills</Typography>
+            <Typography variant="h3" className="subtitle" fontFamily={'inconsolata'}>Education and Technical Skills</Typography>
 
             <Box sx={{ flexDirection:"column" , alignContent:"space-between"}}>
                 <Box sx={{display:"flex", flexDirection:"row" , justifyContent:"space-between"}}>

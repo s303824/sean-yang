@@ -1,5 +1,4 @@
-import { Box, Typography } from "@mui/material";
-import logo from '../images/profile.jpg';
+import { Box } from "@mui/material";
 import '../App.css';
 import Badge from "./Badge";
 
@@ -12,8 +11,8 @@ function TechnicalSection(){
             <Badge subject={"Unity"}/>
             <Badge subject={"Python"}/>
             <Badge subject={"Java"}/>
-            <Badge subject={"Javascript/Typescript"}/>
             <Badge subject={"Git"}/>
+            <Badge subject={"Javascript/Typescript"}/>
         </Box>
     )
 }
