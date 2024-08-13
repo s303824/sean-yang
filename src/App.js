@@ -1,7 +1,7 @@
 import './App.css';
 import TopBar from './components/TopBar';
 import AboutSection from './components/AboutSection'
-import Education_Skills from './components/Education_Skills';
+import EducationSkills from './components/Education_Skills';
 import Projects from './components/Projects';
 import EmailContact from './components/EmailContact'
 
@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <TopBar/>
         <AboutSection/>
-        <Education_Skills/>
+        <EducationSkills/>
         <Projects/>
       </header>
       <EmailContact/>

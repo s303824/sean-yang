@@ -1,3 +1,16 @@
+@media screen and (max-width:632px){
+  /* For mobile phones: */
+  .about {
+    display:inline;
+  }
+}
+
+div .project {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
 .text {
   font-family: 'inconsolata';
   font-size: 16;
@@ -62,13 +75,6 @@
 display: inline;
  flex-direction:"row" ;
  justify-content:'center';
-}
-
-@media screen and (max-width:632px){
-  /* For mobile phones: */
-  .about {
-    display:inline;
-  }
 }
 
 .about{

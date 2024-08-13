@@ -1,22 +1,27 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActionArea  from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function ProjectCard({title, subtitle, description, page_link, picture}) {
+  const matches = useMediaQuery('(min-width:632px)');
+  const isWrap = matches ? "nowrap": "wrap" 
   return (
-    <Card sx={{ minWidth: 350, marginBottom: '16px', backgroundColor:'grey'}}>
-      <CardActionArea  href={page_link}>
+    <Card sx={{ marginBottom: '16px', backgroundColor:'grey'}}>
         <CardContent>
-            <Box sx={{display:'flex', flexDirection:'row'}}>
-                <img src={picture} height={128}/>
-                <Box sx={{display:'flex', flexDirection:'column', marginLeft:'16px'}}>
-                    <Typography gutterBottom variant='h4' fontFamily={'inconsolata'}>
-                    {title}
-                    </Typography>
+
+            <Box className="project" sx={{flexWrap:isWrap}}>
+              <a href={page_link}>                
+                <img src={picture}  alt='thumbnail'width="100%"/>
+              </a>
+                <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
+                    <a href={page_link}  fontFamily={'inconsolata'} sx={{color: "#c45148"}}>
+                      <Typography variant='h4'>
+                        {title}
+                      </Typography>
+                    </a>
                     <Typography variant='h6' fontFamily={'inconsolata'}>
                     {subtitle}
                     </Typography>
@@ -24,9 +29,10 @@ export default function ProjectCard({title, subtitle, description, page_link, pi
                     {description}
                     </Typography>
                 </Box>
+
             </Box>
+
         </CardContent>
-      </CardActionArea >
     </Card>
   );
 }

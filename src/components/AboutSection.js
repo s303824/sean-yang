@@ -13,7 +13,7 @@ function AboutSection(){
                 <Typography variant="h6" fontFamily={'inconsolata'}>
                     My name is Sean Yang, a software engineer specializing in game programming and web development. 
                 </Typography> 
-                <Button href={resume} sx={{borderRadius: '0%', border: 'solid',color: 'white',borderColor: 'white',  cursor: 'pointer !important', width:'256px', marginTop:4, marginBottom:4}} >
+                <Button href={resume} sx={{borderRadius: '0%', border: 'solid',color: 'white',borderColor: 'white',  cursor: 'pointer !important', width:'256px', marginTop:4, marginBottom:4, fontFamily:"inconsolata"}} >
                           My Resume
                       </Button>  
    
