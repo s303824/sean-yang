@@ -50,6 +50,20 @@
   background-color: #282a31;
 }
 
+.resume {
+  border-radius: 0%;
+  border: solid;
+  color: white;
+  border-color: white;
+  cursor: pointer !important;
+}
+
+.bar_buttons{
+display: inline;
+ flex-direction:"row" ;
+ justify-content:'center';
+}
+
 @media screen and (max-width:632px){
   /* For mobile phones: */
   .about {
@@ -109,4 +123,13 @@
 	margin: 0 4px;
 	white-space: nowrap;
 	margin-bottom: 16px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
 }

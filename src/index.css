@@ -3,6 +3,10 @@
   src: url(./inconsolata.regular.ttf);
 }
 
+@font-face {
+  font-family: 'inconsolata_bold';
+  src: url(./inconsolata.bold.ttf);
+}
 
 body {
   margin: 0;

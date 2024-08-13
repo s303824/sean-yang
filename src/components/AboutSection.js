@@ -1,7 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import { Button, Box, Typography } from "@mui/material";
 import logo from '../images/profile.jpg';
 import '../App.css';
 import CircleImage from "./CircleImage";
+import resume from '../Sean_Yang_resume.pdf'
 
 function AboutSection(){
     return(
@@ -11,7 +12,11 @@ function AboutSection(){
                 <Typography className="subtitle" fontFamily={'inconsolata'} variant="h3">Hello!</Typography>
                 <Typography variant="h6" fontFamily={'inconsolata'}>
                     My name is Sean Yang, a software engineer specializing in game programming and web development. 
-                </Typography>    
+                </Typography> 
+                <Button href={resume} sx={{borderRadius: '0%', border: 'solid',color: 'white',borderColor: 'white',  cursor: 'pointer !important', width:'256px', marginTop:4, marginBottom:4}} >
+                          My Resume
+                      </Button>  
+   
             </Box>
 
         </Box>
