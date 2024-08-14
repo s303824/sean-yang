@@ -25,7 +25,8 @@ function Projects(){
 
     return(
         <Box sx={{display:"flex", flexDirection:"column" , padding:4, alignContent:"space-between"}}>
-            <Typography variant="h3"className="subtitle" sx={{marginBottom:4}} fontFamily={'inconsolata'}>Projects</Typography>
+            <Typography variant="h3"className="subtitle" fontFamily={'inconsolata'}>Projects</Typography>
+            <Typography variant="h5" sx={{marginBottom:4}} fontFamily={'inconsolata'}>Hover over project for gameplay footage</Typography>
             <Box>
                 <ProjectCard title={"All Terrain Armor"} gif={ATA_clip} picture={ATA} subtitle={"Game Programmer"} description={ata_description} page_link={'https://alimen6.itch.io/all-terrain-armor'} />
                 <ProjectCard title={"Devil's Advocate"} gif={DA_clip} picture={DA} subtitle={"Game Programmer"} description={da_description} page_link={'https://spectradev.itch.io/devilsadvocate'}/>

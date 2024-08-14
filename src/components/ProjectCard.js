@@ -11,12 +11,12 @@ export default function ProjectCard({title, subtitle, description, page_link, gi
   const isWrap = matches ? "nowrap": "wrap";
 
   return (
-    <Card sx={{ marginBottom: '16px', backgroundColor:'#282a31'}}>
+    <Card sx={{ marginBottom: '16px', backgroundColor:'#282a31'}} onMouseEnter={()=>{document.getElementById(title).src=gif }} onMouseLeave={()=>{document.getElementById(title).src=picture }}>
         <CardContent>
 
             <Box className="project" sx={{flexWrap:isWrap}}>
               <a href={page_link}>   
-                <img id={title} src={gif} onMouseEnter={()=>{document.getElementById(title).src=picture }} onMouseLeave={()=>{document.getElementById(title).src=gif }}alt='thumbnail'width="360px" height="286px"/>
+                <img id={title} src={picture} alt='thumbnail'width="100%" height="286px" />
 
               </a>
                 <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
