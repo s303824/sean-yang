@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sean-yang/static/css/main.383e2e83.css",
-    "main.js": "/sean-yang/static/js/main.a4bbb061.js",
+    "main.js": "/sean-yang/static/js/main.00e0c2de.js",
     "static/js/453.0ac44aa4.chunk.js": "/sean-yang/static/js/453.0ac44aa4.chunk.js",
     "static/media/ata_clips.gif": "/sean-yang/static/media/ata_clips.6c64f084ebd7b03c663b.gif",
     "static/media/profile.jpg": "/sean-yang/static/media/profile.a68af548dbe4ddffb762.jpg",
@@ -15,11 +15,11 @@
     "static/media/ata.png": "/sean-yang/static/media/ata.54757de2f693702ebfc1.png",
     "index.html": "/sean-yang/index.html",
     "main.383e2e83.css.map": "/sean-yang/static/css/main.383e2e83.css.map",
-    "main.a4bbb061.js.map": "/sean-yang/static/js/main.a4bbb061.js.map",
+    "main.00e0c2de.js.map": "/sean-yang/static/js/main.00e0c2de.js.map",
     "453.0ac44aa4.chunk.js.map": "/sean-yang/static/js/453.0ac44aa4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.383e2e83.css",
-    "static/js/main.a4bbb061.js"
+    "static/js/main.00e0c2de.js"
   ]
 }
