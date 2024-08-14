@@ -9,9 +9,12 @@ function TechnicalSection(){
             <Badge subject={"Godot"}/>
             <Badge subject={"Unity"}/>
             <Badge subject={"Python"}/>
+            <Badge subject={"C++"}/>
             <Badge subject={"Java"}/>
             <Badge subject={"Git"}/>
+            <Badge subject={"C#"}/>
             <Badge subject={"Javascript/Typescript"}/>
+            <Badge subject={"C"}/>
         </Box>
     )
 }

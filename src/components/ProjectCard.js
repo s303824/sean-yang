@@ -6,16 +6,18 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import '../App.css';
 
-export default function ProjectCard({title, subtitle, description, page_link, picture}) {
+export default function ProjectCard({title, subtitle, description, page_link, gif, picture}) {
   const matches = useMediaQuery('(min-width:632px)');
-  const isWrap = matches ? "nowrap": "wrap" 
+  const isWrap = matches ? "nowrap": "wrap";
+
   return (
     <Card sx={{ marginBottom: '16px', backgroundColor:'#282a31'}}>
         <CardContent>
 
             <Box className="project" sx={{flexWrap:isWrap}}>
-              <a href={page_link}>                
-                <img src={picture}  alt='thumbnail'width="100%"/>
+              <a href={page_link}>   
+                <img id={title} src={gif} onMouseEnter={()=>{document.getElementById(title).src=picture }} onMouseLeave={()=>{document.getElementById(title).src=gif }}alt='thumbnail'width="360px" height="286px"/>
+
               </a>
                 <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
                     <a href={page_link} className='linkTitle' >
