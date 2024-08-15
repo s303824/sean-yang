@@ -33,8 +33,6 @@ div .project {
 }
 
 .image-container img{
-  max-height: 30vh;
-  min-height: 30vh;
   clip-path: circle();
 }
 
