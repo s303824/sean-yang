@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import '../App.css';
 
-export default function ProjectCard({title, subtitle, description, page_link, gif, picture}) {
+export default function ProjectCard({title, subtitle, description, list,  page_link, gif, picture}) {
   const matches = useMediaQuery('(min-width:632px)');
   const isWrap = matches ? "nowrap": "wrap";
 
@@ -28,8 +28,11 @@ export default function ProjectCard({title, subtitle, description, page_link, gi
                     <Typography variant='h6' fontFamily={'inconsolata'} color={"#91fdc3"}>
                     {subtitle}
                     </Typography>
-                    <Typography variant="body2" fontFamily={'inconsolata'} color={"white"}>
+                    <Typography variant="body0" fontFamily={'inconsolata'} color={"white"}>
                     {description}
+                    </Typography>
+                    <Typography variant="body1" fontFamily={'inconsolata'} color={"white"}>
+                    {list}
                     </Typography>
                 </Box>
 
