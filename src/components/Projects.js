@@ -15,13 +15,13 @@ function Projects(){
     const ata_description = "A first person mech shooter developed with a small team for MechJamV.";
     const ata_list = 
     <ul>
-        <li>UI / menu implementation including a radar minimap to enemies and player direction</li>
-        <li>Behavior tree for enemies to handle idle behavior, attack movements, shooting, animations, and sfx</li>
-        <li>Particle effects using Godot engine systems</li>
-        <li>Tank control movements with independent upper/lower torso rotation</li>
-        <li>Physics gun for throwing prop objects, dealing damage to enemies</li>
-        <li>Music manager for handling music changes and smooth transitions during game events</li>
-        <li>Level manager for handling smooth fade-to-black scene transitions</li>
+        <li>Implemented the UI / menu including a radar minimap to enemies and player direction</li>
+        <li>Organized a behavior tree for enemies to handle idle behavior, attack movements, shooting, animations, and sfx</li>
+        <li>Set up particle effects using Godot engine systems</li>
+        <li>Programmed tank control movements with independent upper/lower torso rotation</li>
+        <li>Created a music manager for handling music changes and smooth transitions during game events</li>
+        <li>Made a physics gun for throwing prop objects, dealing damage to enemies on impact</li>
+        <li>Developed a level manager for handling smooth fade-to-black scene transitions</li>
     </ul>
 
     const da_description = "A comedic narrative-driven game inspired by Ace Attorney made with a team of five as"+
@@ -29,18 +29,18 @@ function Projects(){
     
     const da_list = 
     <ul>
-        <li>Custom dialogue manager that handled dialogue and could emit custom modular signals for
-             in-game events such as character speech sounds & animations, entering/leaving of sprites on screen, camera cuts, etc.</li>
-        <li>Particle effects using Godot engine systems</li>
-        <li>UI / menu implementation</li>
-        <li>2D level layout</li>
+        <li>Created a custom dialogue manager that handled dialogue and could emit custom modular 
+            signals for in-game events such as character speech sounds & animations, entering/leaving of sprites on screen, camera cuts, etc.</li>
+        <li>Organized 2D level layout</li>
+        <li>Made particle effects using Godot engine systems</li>
+        <li>Implemented the UI / menu including settings</li>
     </ul>
 
      const ut_description = "A visual novel created for Stony Brook University’s Ren’Py Competition 2023. The game won first place"+
      " and its technical merit impressed the judges including Tom Rothamel, the creator of Ren'Py.";
      const ut_list = 
      <ul>
-         <li>Solely responsible for the entire code base including multiple concurrent text boxes for different voices, UI / menu  implementation, and in-engine animations 
+         <li>Programmed the entire code base including multiple concurrent text boxes for different voices, UI / menu  implementation, and in-engine animations 
          </li>
          <li>Co-wrote the story</li>
      </ul>
