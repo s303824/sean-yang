@@ -16,22 +16,22 @@ function Projects(){
     const ata_list = 
     <ul>
         <li>UI / menu implementation including a radar minimap to enemies and player direction</li>
-        <li>Behavior tree for FPS enemies stored in combat rooms</li>
-        <li>Particle effects using Godot engine effects</li>
-        <li>Tank control movements</li>
+        <li>Behavior tree for enemies to handle idle behavior, attack movements, shooting, animations, and sfx</li>
+        <li>Particle effects using Godot engine systems</li>
+        <li>Tank control movements with independent upper/lower torso rotation</li>
         <li>Physics gun for throwing prop objects, dealing damage to enemies</li>
-        <li>Music manager for handling music changes/requests from game objects</li>
-        <li>Level manager for handling scene transitions smoothly with canvas layer fade-in/fade-out</li>
+        <li>Music manager for handling music changes and smooth transitions during game events</li>
+        <li>Level manager for handling smooth fade-to-black scene transitions</li>
     </ul>
 
-    const da_description = "A comedic adventure game inspired by Ace Attorney made with a team of five as"+
+    const da_description = "A comedic narrative-driven game inspired by Ace Attorney made with a team of five as"+
     " part of Ludum Dare 55 Jam. The game was highly-rated and received an overall result of 23rd place out of 2194 submissions.";
     
     const da_list = 
     <ul>
-        <li>Custom dialogue manager that handled dialogue and could emit signals to game objects for scripted events 
-            such as character speech sounds/animations, camera cuts, etc.</li>
-        <li>Particle effects using Godot engine effects</li>
+        <li>Custom dialogue manager that handled dialogue and could emit custom modular signals for
+             in-game events such as character speech sounds & animations, entering/leaving of sprites on screen, camera cuts, etc.</li>
+        <li>Particle effects using Godot engine systems</li>
         <li>UI / menu implementation</li>
         <li>2D level layout</li>
     </ul>
