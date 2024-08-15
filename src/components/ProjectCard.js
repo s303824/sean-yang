@@ -9,6 +9,7 @@ import '../App.css';
 export default function ProjectCard({title, subtitle, description, list,  page_link, gif, picture}) {
   const matches = useMediaQuery('(min-width:632px)');
   const isWrap = matches ? "nowrap": "wrap";
+  const img_size = matches? "360px": "100%";
 
   return (
     <Card sx={{ marginBottom: '16px', backgroundColor:'#282a31'}} onMouseEnter={()=>{document.getElementById(title).src=gif }} onMouseLeave={()=>{document.getElementById(title).src=picture }}>
@@ -16,7 +17,7 @@ export default function ProjectCard({title, subtitle, description, list,  page_l
 
             <Box className="project" sx={{flexWrap:isWrap}}>
               <a href={page_link}>   
-                <img id={title} src={picture} alt='thumbnail'width="100%" height="286px" />
+                <img id={title} src={picture} alt='thumbnail'width={img_size} height="286px" />
 
               </a>
                 <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
