@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sean-yang/static/css/main.350ef8c2.css",
-    "main.js": "/sean-yang/static/js/main.33953436.js",
+    "main.js": "/sean-yang/static/js/main.a47bf605.js",
     "static/js/453.0ac44aa4.chunk.js": "/sean-yang/static/js/453.0ac44aa4.chunk.js",
     "static/media/ata_clips.gif": "/sean-yang/static/media/ata_clips.6c64f084ebd7b03c663b.gif",
     "static/media/profile.jpg": "/sean-yang/static/media/profile.a68af548dbe4ddffb762.jpg",
@@ -10,16 +10,16 @@
     "static/media/inconsolata.regular.ttf": "/sean-yang/static/media/inconsolata.regular.3ac8b4396c7bad769da0.ttf",
     "static/media/inconsolata.bold.ttf": "/sean-yang/static/media/inconsolata.bold.c67d0304c9fb989669d1.ttf",
     "static/media/devil_advocate.png": "/sean-yang/static/media/devil_advocate.96f6794bbe71f02610c0.png",
-    "static/media/Sean_Yang_resume.pdf": "/sean-yang/static/media/Sean_Yang_resume.19aaa3d3939e689594ee.pdf",
+    "static/media/Sean_Yang_resume.pdf": "/sean-yang/static/media/Sean_Yang_resume.d4dae0aa568ce502e167.pdf",
     "static/media/us_and_them.png": "/sean-yang/static/media/us_and_them.a2a8cb3adffb1cc794e3.png",
     "static/media/ata.png": "/sean-yang/static/media/ata.54757de2f693702ebfc1.png",
     "index.html": "/sean-yang/index.html",
     "main.350ef8c2.css.map": "/sean-yang/static/css/main.350ef8c2.css.map",
-    "main.33953436.js.map": "/sean-yang/static/js/main.33953436.js.map",
+    "main.a47bf605.js.map": "/sean-yang/static/js/main.a47bf605.js.map",
     "453.0ac44aa4.chunk.js.map": "/sean-yang/static/js/453.0ac44aa4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.350ef8c2.css",
-    "static/js/main.33953436.js"
+    "static/js/main.a47bf605.js"
   ]
 }
