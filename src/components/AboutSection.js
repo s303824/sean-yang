@@ -7,23 +7,24 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 function AboutSection(){
     const matches = useMediaQuery('(min-width:632px)');
-    const isWrap = matches ? "nowrap": "wrap";
-    const isMarginApplied = matches ? 4: 0;
+    const isWrap = matches ? "nowrap": "wrap-reverse";
+    const isPaddingApplied = matches ? 4: 0;
 
 
     return(
         <Box className="about" sx={{ display:"flex", flexDirection:"row" , flexWrap:isWrap, padding:4, justifyContent:"space-around"}}>
-            <CircleImage image_file={logo} />
-            <Box sx={{marginLeft:isMarginApplied}}>
+            <Box sx={{paddingRight:isPaddingApplied}}>
                 <Typography className="subtitle" fontFamily={'inconsolata'} variant="h3">Hello!</Typography>
                 <Typography variant="h6" fontFamily={'inconsolata'}>
-                    My name is Sean Yang, a software engineer specializing in game programming (both systems and gameplay) and web development. I enjoy tackling new challenges and would love to talk about job opportunities.
+                    My name is Sean Yang, a software engineer specializing in game programming (both systems and gameplay) and web development. 
+                    I enjoy tackling new challenges and you can contact me at the email address above :)
                 </Typography> 
-                <Button href={resume} sx={{borderRadius: '0%', border: 'solid',color: 'white',borderColor: 'white',  cursor: 'pointer !important', width:'256px', marginTop:4, marginBottom:4, fontFamily:"inconsolata"}} >
+                <Button href={resume} sx={{borderRadius: '0%', border: 'solid',color: 'white',borderColor: 'white',  cursor: 'pointer !important', width:'256px', marginTop:4, marginBottom:4, fontFamily:"inconsolata", fontSize:18}} >
                           My Resume
                       </Button>  
    
             </Box>
+            <CircleImage image_file={logo} />
 
         </Box>
     )

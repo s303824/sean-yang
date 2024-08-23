@@ -5,6 +5,12 @@
   }
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 div .project {
   display: flex;
   flex-direction: row;
@@ -32,8 +38,11 @@ div .project {
   display: flexbox;
 }
 
+
 .image-container img{
   clip-path: circle();
+  border: 5px solid #91a1fd;
+  border-radius: 500px;
 }
 
 .App-header {
@@ -89,6 +98,10 @@ display: inline;
 .about{
   display:flex;
   flex-wrap: wrap;
+}
+
+.fade_container{
+  animation: fadeIn 3s; 
 }
 
 .fa {
