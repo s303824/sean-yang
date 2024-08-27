@@ -16,10 +16,7 @@ export default function ProjectCard({title, subtitle, description, list,  page_l
         <CardContent>
 
             <Box className="project" sx={{flexWrap:isWrap}}>
-              <a href={page_link}>   
                 <img id={title} src={picture} alt='thumbnail'width={img_size} height="286px" />
-
-              </a>
                 <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
                     <a href={page_link} className='linkTitle' >
                       <Typography variant='h4' fontFamily={'inconsolata'} color={"#c45148"}>
@@ -32,7 +29,7 @@ export default function ProjectCard({title, subtitle, description, list,  page_l
                     <Typography variant="body0" fontFamily={'inconsolata'} color={"white"}>
                     {description}
                     </Typography>
-                    <Typography variant="body1" fontFamily={'inconsolata'} color={"white"}>
+                    <Typography variant="body2" fontFamily={'inconsolata'} color={"white"}>
                     {list}
                     </Typography>
                 </Box>

@@ -10,13 +10,18 @@ import UT_clip from "../images/ut_clips.gif"
 
 import DA_clip from "../images/da_clips.gif"
 import DA from '../images/devil_advocate.png'
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Projects(){
+    const matches = useMediaQuery('(min-width:632px)');
+    const message = matches ? "Hover over project card for gameplay footage": "Click project card for gameplay footage";
+  
+
     const ata_description = "A first person mech shooter developed with a small team for MechJamV.";
     const ata_list = 
     <ul>
         <li>Implemented the UI / menu including a radar minimap to enemies and player direction</li>
-        <li>Organized a behavior tree for enemies to handle idle behavior, attack movements, shooting, animations, and sfx</li>
+        <li>Organized a behavior tree for enemies to handle idle behavior, attack movements, shooting, animations, and sound effects</li>
         <li>Set up particle effects using Godot engine systems</li>
         <li>Programmed tank control movements with independent upper/lower torso rotation</li>
         <li>Created a music manager for handling music changes and smooth transitions during game events</li>
@@ -30,7 +35,7 @@ function Projects(){
     const da_list = 
     <ul>
         <li>Created a custom dialogue manager that handled dialogue and could emit custom modular 
-            signals for in-game events such as character speech sounds & animations, entering/leaving of sprites on screen, camera cuts, etc.</li>
+            signals for in-game events such as character sounds & animations, entering/leaving of sprites on screen, visual effects and camera cuts</li>
         <li>Organized 2D level layout</li>
         <li>Made particle effects using Godot engine systems</li>
         <li>Implemented the UI / menu including settings</li>
@@ -48,7 +53,7 @@ function Projects(){
     return(
         <Box sx={{display:"flex", flexDirection:"column" , padding:4, alignContent:"space-between"}}>
             <Typography variant="h3"className="subtitle" fontFamily={'inconsolata'}>Projects</Typography>
-            <Typography variant="h5" sx={{marginBottom:4}} fontFamily={'inconsolata'}>Hover over project for gameplay footage</Typography>
+            <Typography variant="h5" sx={{marginBottom:4}} fontFamily={'inconsolata'}>{message}</Typography>
             <Box>
                 <ProjectCard title={"All Terrain Armor"} gif={ATA_clip} picture={ATA} subtitle={"Game Programmer"} description={ata_description} list={ata_list} page_link={'https://alimen6.itch.io/all-terrain-armor'} />
                 <ProjectCard title={"Devil's Advocate"} gif={DA_clip} picture={DA} subtitle={"Game Programmer"} description={da_description} list={da_list} page_link={'https://spectradev.itch.io/devilsadvocate'}/>

@@ -58,13 +58,13 @@ div .project {
 }
 
 .linkTitle {
-  text-decoration: none;
-
+  color: #c45148;
+  text-decoration: underline;
 }
 
 .linkTitle:hover {
   color: #c45148;
-  text-decoration: underline;
+  text-decoration: none;
 
 }
 
