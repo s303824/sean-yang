@@ -12,7 +12,7 @@ function TechnicalSection(){
             <Badge subject={"C++"}/>
             <Badge subject={"Java"}/>
             <Badge subject={"Git"}/>
-            <Badge subject={"C#"}/>
+            <Badge subject={".NET(C#)"}/>
             <Badge subject={"Javascript/Typescript"}/>
             <Badge subject={"C"}/>
         </Box>
