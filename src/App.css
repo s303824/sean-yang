@@ -36,13 +36,8 @@ div .project {
 
 .image-container {
   display: flexbox;
-}
-
-
-.image-container img{
   clip-path: circle();
-  border: 5px solid #91a1fd;
-  border-radius: 500px;
+
 }
 
 .App-header {

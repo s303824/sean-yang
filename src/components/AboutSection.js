@@ -1,5 +1,5 @@
 import { Button, Box, Typography } from "@mui/material";
-import logo from '../images/profile.jpg';
+import logo from '../images/new_profile.jpg';
 import '../App.css';
 import CircleImage from "./CircleImage";
 import resume from '../Sean_Yang_resume.pdf'
