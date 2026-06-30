@@ -16,7 +16,7 @@ function Projects(){
     const matches = useMediaQuery('(min-width:632px)');
     const message = matches ? "Hover over project card for gameplay footage": "Click project card for gameplay footage";
   
-    var content = matches ? {display:"grid", gridTemplate:"auto / 240px 240px 240px", gap:'16px', alignItems:'stretch'}:
+    var content = matches ? {display:"grid", gridTemplate:"auto / 256px 256px 256px", gap:'16px', alignItems:'stretch'}:
     {display:"grid", gap:'16px', alignItems:'stretch'}
 
     const ata_description = "A first person mech shooter developed with a small team for MechJamV.";

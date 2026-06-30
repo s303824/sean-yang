@@ -8,62 +8,54 @@ import '../App.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-import { Icon, IconButton } from '@mui/material';
+import { Dialog, Icon, IconButton } from '@mui/material';
 
 export default function ProjectCard({title, subtitle, description, list,  page_link, gif, picture}) {
   const matches = useMediaQuery('(min-width:632px)');
   const isWrap = matches ? "nowrap": "wrap";
-  const img_size = matches? "200px": "100%";
-  const [isHovering, setIsHovering] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  const img_size = matches? "224px": "100%";
+  const [open, setOpen] = React.useState(false);
 
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible);
-  };
 
   function onCardEnter(){
-    setIsHovering(true);
     document.getElementById(title).src=gif;  
   }
 
 
   function onCardLeave(){
-    setIsHovering(false);
     document.getElementById(title).src=picture;
-    hideListOnLeave(); 
   }
 
-  async function hideListOnLeave() {
-    setTimeout(()=>{
-      if(!isHovering){
-        setIsVisible(false);
-      }
-    },1000)
-  }
+  const handleClickOpen = () => {
+    setOpen(true);
+    onCardLeave();
+  };
 
+  const handleClose = () => {
+    setOpen(false);
+  };
 
 
   return (
     <Card sx={{backgroundColor:'#282a31'}} onMouseEnter={onCardEnter} onMouseLeave={onCardLeave}>
         <CardContent>
             <Box className="project">
-                <img id={title} src={picture} alt='thumbnail' width={img_size} height="200px" className='project-image'/>
+              <Box sx={{justifyContent:"center"}}>
+                <img id={title} src={picture} alt='thumbnail' width={img_size} height="200px" className='project-image' />
+              </Box>
                   <Box sx={{display:'flex', flexDirection:'row', justifyContent:"space-between"}}>
                     <a href={page_link} className='linkTitle' >
                       <Typography variant='h5' fontFamily={'roboto'} color={"#c45148"}>
                         {title}
                       </Typography>
                     </a>
-
                     <IconButton disableRipple 
-                    onClick={toggleVisibility}>
+                    onClick={handleClickOpen}>
                       {
-                        !isVisible ? 
-                          <KeyboardArrowDownIcon sx={{ color: '#c45148', "&:active":{
+                          <KeyboardArrowDownIcon sx={{ color: '#c45148', "&:hover":{
                             color:"white"
                           }
-                        }} />:
-                          <KeyboardArrowUpIcon sx={{ color: '#c45148', "&:active":{
+                            ,"&:active":{
                             color:"white"
                           }
                         }} />
@@ -78,10 +70,23 @@ export default function ProjectCard({title, subtitle, description, list,  page_l
                     {description}
                     </Typography>
 
-                  </Box>                    
-                    {isVisible && <Typography sx={{fontSize:"12px"}} fontFamily={'roboto'} color={"white"}>
-                    {list}
-                    </Typography>}
+                  </Box>
+                  <Dialog                    
+                    open={open}
+                    onClose={handleClose}>
+                      <Box sx={{backgroundColor:'#282a31', display:'flex', flexDirection:'column', justifyContent:"space-between", padding:"16px"}}>
+                        <img id={title} src={gif} alt='thumbnail' width={matches?"100%":'100%'} height="256px" className='project-image'/>
+                            <a href={page_link} className='linkTitle' >
+                            <Typography variant='h5' fontFamily={'roboto'} color={"#c45148"}>
+                              {title}
+                            </Typography>
+                            </a>
+                            <Typography sx={{fontSize:"12px"}} fontFamily={'roboto'} color={"white"}>
+                            {list}
+                            </Typography>
+                          </Box>
+                  </Dialog>
+                                      
                 </Box>
         </CardContent>
     </Card>

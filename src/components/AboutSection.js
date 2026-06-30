@@ -13,7 +13,7 @@ function AboutSection(){
 
     return(
         <Box className="about" sx={{ display:"flex", flexDirection:"row" , flexWrap:isWrap, px:4, py:1, justifyContent:"space-between"}}>
-            <Box sx={{paddingRight:isPaddingApplied}}>
+            <Box sx={{paddingRight:isPaddingApplied, alignContent:"center"}}>
                 <Typography className="subtitle" fontFamily={'roboto'} variant="h4">Hello!</Typography>
                 <Typography fontFamily={'roboto'}>
                     My name is Sean Yang, a graduate from Stony Brook University with a passion for full-stack web development and game programming. 
