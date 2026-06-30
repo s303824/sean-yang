@@ -55,9 +55,18 @@ export default function ProjectCard({title, subtitle, description, list,  page_l
                       </Typography>
                     </a>
 
-                    <IconButton disableRipple onClick={toggleVisibility}>{
-                      !isVisible ? <KeyboardArrowDownIcon sx={{ color: '#c45148' }} />:
-                        <KeyboardArrowUpIcon sx={{ color: '#c45148' }} />
+                    <IconButton disableRipple 
+                    onClick={toggleVisibility}>
+                      {
+                        !isVisible ? 
+                          <KeyboardArrowDownIcon sx={{ color: '#c45148', "&:active":{
+                            color:"white"
+                          }
+                        }} />:
+                          <KeyboardArrowUpIcon sx={{ color: '#c45148', "&:active":{
+                            color:"white"
+                          }
+                        }} />
                       }
                     </IconButton>
                   </Box>

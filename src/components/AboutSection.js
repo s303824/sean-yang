@@ -10,11 +10,6 @@ function AboutSection(){
     const matches = useMediaQuery('(min-width:632px)');
     const isWrap = matches ? "nowrap": "wrap-reverse";
     const isPaddingApplied = matches ? 4: 0;
-    const [hover, setHover] = useState(false)
-
-    function resumeMouseEvent(){
-        setHover(!hover)
-    }
 
     return(
         <Box className="about" sx={{ display:"flex", flexDirection:"row" , flexWrap:isWrap, px:4, py:1, justifyContent:"space-between"}}>
@@ -24,7 +19,7 @@ function AboutSection(){
                     My name is Sean Yang, a graduate from Stony Brook University with a passion for full-stack web development and game programming. 
                     I love tackling new challenges and you can contact me anytime at the email address above :)
                 </Typography> 
-                <Button href={resume} onMouseEnter={resumeMouseEvent} onMouseLeave={resumeMouseEvent} sx={{
+                <Button href={resume}  sx={{
                     borderRadius: '0%', color: 'white', border:"1px solid white",  cursor: 'pointer !important', width:'256px', my:2, fontFamily:"roboto",
                     '&:hover':{
                         color:"#0c1536",
