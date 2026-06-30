@@ -8,6 +8,12 @@
   src: url(./inconsolata.bold.ttf);
 }
 
+@font-face {
+  font-family: 'roboto';
+  src: url(./RobotoCondensed-Regular.ttf);
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

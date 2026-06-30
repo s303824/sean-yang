@@ -1,41 +1,79 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import '../App.css';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+
+import { Icon, IconButton } from '@mui/material';
 
 export default function ProjectCard({title, subtitle, description, list,  page_link, gif, picture}) {
   const matches = useMediaQuery('(min-width:632px)');
   const isWrap = matches ? "nowrap": "wrap";
-  const img_size = matches? "360px": "100%";
+  const img_size = matches? "200px": "100%";
+  const [isHovering, setIsHovering] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
+  function onCardEnter(){
+    setIsHovering(true);
+    document.getElementById(title).src=gif;  
+  }
+
+
+  function onCardLeave(){
+    setIsHovering(false);
+    document.getElementById(title).src=picture;
+    hideListOnLeave(); 
+  }
+
+  async function hideListOnLeave() {
+    setTimeout(()=>{
+      if(!isHovering){
+        setIsVisible(false);
+      }
+    },1000)
+  }
+
+
 
   return (
-    <Card sx={{ marginBottom: '16px', backgroundColor:'#282a31'}} onMouseEnter={()=>{document.getElementById(title).src=gif }} onMouseLeave={()=>{document.getElementById(title).src=picture }}>
+    <Card sx={{backgroundColor:'#282a31'}} onMouseEnter={onCardEnter} onMouseLeave={onCardLeave}>
         <CardContent>
-
-            <Box className="project" sx={{flexWrap:isWrap}}>
-                <img id={title} src={picture} alt='thumbnail'width={img_size} height="286px" />
-                <Box sx={{display:'flex', flexDirection:'column', marginLeft:'5%', width:"75%"}}>
+            <Box className="project">
+                <img id={title} src={picture} alt='thumbnail' width={img_size} height="200px" className='project-image'/>
+                  <Box sx={{display:'flex', flexDirection:'row', justifyContent:"space-between"}}>
                     <a href={page_link} className='linkTitle' >
-                      <Typography variant='h4' fontFamily={'inconsolata'} color={"#c45148"}>
+                      <Typography variant='h5' fontFamily={'roboto'} color={"#c45148"}>
                         {title}
                       </Typography>
                     </a>
-                    <Typography variant='h6' fontFamily={'inconsolata'} color={"#91fdc3"}>
+
+                    <IconButton disableRipple onClick={toggleVisibility}>{
+                      !isVisible ? <KeyboardArrowDownIcon sx={{ color: '#c45148' }} />:
+                        <KeyboardArrowUpIcon sx={{ color: '#c45148' }} />
+                      }
+                    </IconButton>
+                  </Box>
+                  <Box sx={{display:'flex', flexWrap:'wrap'}}>
+                    <Typography fontFamily={'roboto'} color={"#91fdc3"}>
                     {subtitle}
                     </Typography>
-                    <Typography variant="body0" fontFamily={'inconsolata'} color={"white"}>
+                    <Typography sx={{fontSize:"12px"}} fontFamily={'roboto'} color={"white"}>
                     {description}
                     </Typography>
-                    <Typography variant="body2" fontFamily={'inconsolata'} color={"white"}>
+
+                  </Box>                    
+                    {isVisible && <Typography sx={{fontSize:"12px"}} fontFamily={'roboto'} color={"white"}>
                     {list}
-                    </Typography>
+                    </Typography>}
                 </Box>
-
-            </Box>
-
         </CardContent>
     </Card>
   );

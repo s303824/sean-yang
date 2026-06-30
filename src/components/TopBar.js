@@ -8,8 +8,8 @@ function TopBar(){
         <Box sx={{position:"sticky", justifyContent:'left'}}>
           <AppBar position="sticky">
             <Box className='bar' sx={{display:'flex', flexWrap:'wrap'}}>
-              <Typography variant="h2" className="title" sx={{flexGrow: 1, textAlign:"left" , padding:2}} fontFamily={'inconsolata'}>
-                Sean Yang
+              <Typography variant="h2" className="title" sx={{flexGrow: 1, textAlign:"left" , padding:2}} fontFamily={'roboto'}>
+                SEAN YANG
               </Typography>
               
                 <ButtonGroup sx={{ margin:2}}>
@@ -18,7 +18,6 @@ function TopBar(){
                         <EmailIcon/>
                       </a>
                     </IconButton>
-
                     <IconButton>
                       <a href="https://www.linkedin.com/in/sean-y-430595124/" class="fa fa-linkedin"/>
                     </IconButton>

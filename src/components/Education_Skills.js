@@ -4,15 +4,15 @@ import '../App.css';
 
 function Education_Skills(){
     return(
-        <Box sx={{display:"block", flexDirection:"column" , alignContent:"space-between", backgroundColor:'black', padding:4}}>
-            <Typography variant="h3" className="subtitle" fontFamily={'inconsolata'}>Education and Technical Skills</Typography>
+        <Box sx={{display:"block", flexDirection:"column" , alignContent:"space-between", px:4, py:1, borderTop: '1px solid white', borderBottom: '1px solid white'}}>
+            <Typography variant="h4" className="subtitle" fontFamily={'roboto'}>Education and Technical Skills</Typography>
 
             <Box sx={{ flexDirection:"column" , alignContent:"space-between"}}>
                 <Box sx={{display:"flex", flexDirection:"row" , justifyContent:"space-between"}}>
-                    <Typography variant="h4" fontFamily={'inconsolata'}>Stony Brook University</Typography> 
-                    <Typography variant="h5" fontFamily={'inconsolata'}>Graduated 2023</Typography> 
+                    <Typography variant="h6" fontFamily={'roboto'}>Stony Brook University</Typography> 
+                    <Typography variant="h6" fontFamily={'roboto'}>Graduated 2023</Typography> 
                 </Box>
-                <Typography variant="h5" fontFamily={'inconsolata'}>Bachelor of Science in Computer Science</Typography> 
+                <Typography fontFamily={'roboto'}>Bachelor of Science in Computer Science</Typography> 
             </Box>
 
             <TechnicalSection/>

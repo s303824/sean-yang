@@ -16,6 +16,8 @@ function Projects(){
     const matches = useMediaQuery('(min-width:632px)');
     const message = matches ? "Hover over project card for gameplay footage": "Click project card for gameplay footage";
   
+    var content = matches ? {display:"grid", gridTemplate:"auto / 240px 240px 240px", gap:'16px', alignItems:'stretch'}:
+    {display:"grid", gap:'16px', alignItems:'stretch'}
 
     const ata_description = "A first person mech shooter developed with a small team for MechJamV.";
     const ata_list = 
@@ -45,16 +47,17 @@ function Projects(){
      " and its technical merit impressed the judges including Tom Rothamel, the creator of Ren'Py.";
      const ut_list = 
      <ul>
-         <li>Programmed the entire code base including multiple concurrent text boxes for different voices, UI / menu  implementation, and in-engine animations 
+         <li>Programmed the entire code base including multiple concurrent text boxes for different voices, UI/menu  implementation, and in-engine animations 
          </li>
          <li>Co-wrote the story</li>
      </ul>
 
     return(
-        <Box sx={{display:"flex", flexDirection:"column" , padding:4, alignContent:"space-between"}}>
-            <Typography variant="h3"className="subtitle" fontFamily={'inconsolata'}>Projects</Typography>
-            <Typography variant="h5" sx={{marginBottom:4}} fontFamily={'inconsolata'}>{message}</Typography>
-            <Box>
+        <Box sx={{display:"flex", flexDirection:"column" , px:4, py:1, alignContent:"space-between"}}>
+            <Typography variant="h4"className="subtitle" fontFamily={'roboto'}>Projects</Typography>
+            <Typography sx={{marginBottom:2}} fontFamily={'roboto'}>{message}</Typography>
+
+            <Box sx={content}>
                 <ProjectCard title={"All Terrain Armor"} gif={ATA_clip} picture={ATA} subtitle={"Game Programmer"} description={ata_description} list={ata_list} page_link={'https://alimen6.itch.io/all-terrain-armor'} />
                 <ProjectCard title={"Devil's Advocate"} gif={DA_clip} picture={DA} subtitle={"Game Programmer"} description={da_description} list={da_list} page_link={'https://spectradev.itch.io/devilsadvocate'}/>
                 <ProjectCard title={"Us and Them"} gif={UT_clip} picture={UT} subtitle={"Game Programmer"} description={ut_description} list={ut_list} page_link={'https://xander1230.itch.io/us-and-them'} />
