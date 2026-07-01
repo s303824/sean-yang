@@ -60,7 +60,7 @@ function CredentialSection(){
                 <Credential title="JP Morgan SWE Job Simulation" subtitle="Forage" skills={jp_list} link={jp}/>
                 <Credential title="Wells Fargo SWE Job Simulation" subtitle="Forage" skills={wf_list} link={wf}/>
                 <Credential title="Walmart Advanced SWE Job Simulation" subtitle="Forage" skills={wm_list}  link={wm}/>
-                <Credential title="Commonwealth Bank SWE Job Simulation" subtitle="Forage" skills={cmb_list} link={cmb}/>
+                <Credential title="CommBank SWE Job Simulation" subtitle="Forage" skills={cmb_list} link={cmb}/>
                 <Credential title="Quantium SWE Job Simulation" subtitle="Forage" skills={q_list} link={q}/>
                 <Credential title="Google IT Support Professional Certificate" subtitle="Coursera" skills={google_list} link={google}/>
         </Box>
