@@ -14,7 +14,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Projects(){
     const matches = useMediaQuery('(min-width:632px)');
-    const message = matches ? "Hover over project card for gameplay footage": "Click project card for gameplay footage";
+    const message = "Click the dropdown button to learn more";
   
     var content = matches ? {display:"grid", gridTemplate:"auto / 256px 256px 256px", gap:'16px', alignItems:'stretch'}:
     {display:"grid", gap:'16px', alignItems:'stretch'}
@@ -53,7 +53,7 @@ function Projects(){
      </ul>
 
     return(
-        <Box sx={{display:"flex", flexDirection:"column" , px:4, py:1, alignContent:"space-between"}}>
+        <Box sx={{display:"flex", flexDirection:"column" , px:4, paddingTop:1, paddingBottom:8, alignContent:"space-between"}}>
             <Typography variant="h4"className="subtitle" fontFamily={'roboto'}>Projects</Typography>
             <Typography sx={{marginBottom:2}} fontFamily={'roboto'}>{message}</Typography>
 

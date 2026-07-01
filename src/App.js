@@ -3,6 +3,7 @@ import TopBar from './components/TopBar';
 import AboutSection from './components/AboutSection'
 import EducationSkills from './components/Education_Skills';
 import Projects from './components/Projects';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <AboutSection/>
         <EducationSkills/>
         <Projects/>
+        <Footer/>
       </header>
     </div>
   );
