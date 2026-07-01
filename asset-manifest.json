@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sean-yang/static/css/main.ea1dac2f.css",
-    "main.js": "/sean-yang/static/js/main.15708c89.js",
+    "main.js": "/sean-yang/static/js/main.1f0f0b00.js",
     "static/js/453.0ac44aa4.chunk.js": "/sean-yang/static/js/453.0ac44aa4.chunk.js",
     "static/media/ata_clips.gif": "/sean-yang/static/media/ata_clips.6c64f084ebd7b03c663b.gif",
     "static/media/new_profile.jpg": "/sean-yang/static/media/new_profile.0d2db07f624033e23812.jpg",
@@ -23,11 +23,11 @@
     "static/media/tileslate-logo.png": "/sean-yang/static/media/tileslate-logo.cfd775a7f4df54262a09.png",
     "index.html": "/sean-yang/index.html",
     "main.ea1dac2f.css.map": "/sean-yang/static/css/main.ea1dac2f.css.map",
-    "main.15708c89.js.map": "/sean-yang/static/js/main.15708c89.js.map",
+    "main.1f0f0b00.js.map": "/sean-yang/static/js/main.1f0f0b00.js.map",
     "453.0ac44aa4.chunk.js.map": "/sean-yang/static/js/453.0ac44aa4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea1dac2f.css",
-    "static/js/main.15708c89.js"
+    "static/js/main.1f0f0b00.js"
   ]
 }
