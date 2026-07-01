@@ -19,12 +19,12 @@ function Footer(){
                       <a class="fa fa-email">
                         <EmailIcon/>
                       </a>
-                      <Box sx={{px:1,alignContent:"center"}}>{matches &&
+                      {matches &&<Box sx={{px:1,alignContent:"center"}}>
                         <Typography sx={{align:"center", color:"white"}}>
                           syangcontact@gmail.com
-                        </Typography>}
+                        </Typography>
 
-                      </Box>
+                      </Box>}
                 </Box>
                 </Link>
                 

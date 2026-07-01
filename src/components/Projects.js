@@ -45,7 +45,7 @@ function Projects(){
         <li>Implemented the UI / menu including settings</li>
     </ul>
 
-    const ts_description = "As part of my capstone project, built with a team of four a full-stack web application that served"+
+    const ts_description = "A full-stack web application built with a small team for capstone project that served"+
     " as a community for 2D game map creators. It provided collaborative tileset and map editing tools as well as mechanisms for"+
     " finding, sharing, rating, and talking about maps and the platforms and games they are designed for. "
      const ts_list = 
