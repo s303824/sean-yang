@@ -160,6 +160,27 @@ display: inline;
  
 }
 
+.credential-list {
+	display: flex;
+	flex-wrap: wrap;
+  justify-items: center;
+  margin-top: 16px;
+}
+
+.credential-list .credential {
+	list-style: none;
+	padding: 8px;
+	border-radius: 8px;
+	border: 1px solid white;
+	color: #c45148;
+  background-color: #282a31;
+	margin: 0 4px;
+	white-space: nowrap;
+	margin-bottom: 16px;
+ 
+}
+
+
 img .project-image {
   display: block;
   margin-left: auto;

@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import TechnicalSection from './TechnicalSection.js';
 import '../App.css';
+import CredentialSection from './CredentialSection.js'
 
 function Education_Skills(){
     return(
@@ -14,8 +15,10 @@ function Education_Skills(){
                 </Box>
                 <Typography fontFamily={'roboto'}>Bachelor of Science in Computer Science</Typography> 
             </Box>
-
             <TechnicalSection/>
+        <Typography variant="h5" fontFamily={'roboto'}>Certifications</Typography>
+        <CredentialSection/>
+
         </Box>
     )
 }

@@ -2,9 +2,8 @@ import { Button, Box, Typography } from "@mui/material";
 import logo from '../images/new_profile.jpg';
 import '../App.css';
 import CircleImage from "./CircleImage";
-import resume from '../Sean_Yang_resume.pdf'
+import resume from '../files/Sean_Yang_resume.pdf'
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useState } from "react";
 
 function AboutSection(){
     const matches = useMediaQuery('(min-width:632px)');
