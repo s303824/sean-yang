@@ -32,12 +32,12 @@ function Footer(){
                   <Box sx={{display:'flex',flexDirection:"row"}}>
 
                       <a href="https://www.linkedin.com/in/sean-yang1/" class="fa fa-linkedin"/>
-                    <Box sx={{px:1,alignContent:"center"}}>{matches &&
+                    {matches && <Box sx={{px:1,alignContent:"center"}}>
                         <Typography sx={{textAlign:"center", color:"white"}}>
                           https://www.linkedin.com/in/sean-yang1/
-                        </Typography>}
+                        </Typography>
 
-                    </Box>
+                    </Box>}
                     </Box>
 
                 </Link>
@@ -45,12 +45,12 @@ function Footer(){
                 <Link href="https://github.com/s303824">
                   <Box sx={{display:'flex',flexDirection:"row"}}>
                       <a href="https://github.com/s303824" class="fa fa-github fa-inverse"/>
-                    <Box sx={{px:1, alignContent:"center"}}>{matches &&
+                    {matches && <Box sx={{px:1, alignContent:"center"}}>
                         <Typography sx={{textAlign:"center", color:"white"}}>
                           https://github.com/s303824
-                        </Typography>}
+                        </Typography>
 
-                    </Box>
+                    </Box>}
 
                   </Box>
 
@@ -60,12 +60,12 @@ function Footer(){
                       <a href='https://the-other-other.itch.io/' class="fa fa-itchio">
                         <VideogameAssetIcon/>
                       </a>
-                    <Box sx={{px:1,alignContent:"center"}}>{matches &&
+                    {matches && <Box sx={{px:1,alignContent:"center"}}>
                         <Typography sx={{textAlign:"center", color:"white"}}>
                           https://the-other-other.itch.io/
-                        </Typography>}
+                        </Typography>
 
-                    </Box>
+                    </Box>}
                   </Box>
                 </Link>
                   
