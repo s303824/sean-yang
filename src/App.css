@@ -111,6 +111,11 @@ display: inline;
     opacity: 0.7;
 }
 
+.fa-email {
+  background: grey;
+  color:white;
+}
+
 .fa-linkedin {
   background: #0072b1;
   color: white;
@@ -121,15 +126,18 @@ display: inline;
   color: white;
 }
 
+.fa-inverse {
+    background: white;
+  color: black;
+
+}
+
 .fa-itchio {
   background: #fa5c5c;
   color:white;
 }
 
-.fa-email {
-  background: grey;
-  color:white;
-}
+
 
 .badge-list {
 	display: flex;
