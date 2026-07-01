@@ -9,8 +9,8 @@ function Footer(){
     const matches = useMediaQuery('(min-width:632px)');
   
     return (
-            <Box sx={{display:'flex', flexDirection:'column', flexWrap:'wrap', height: "10", padding:8 , borderTop:"1px solid white"}}>
-              <Typography variant="h4"className="subtitle" sx={{flexGrow: 1, textAlign:"center", marginBottom:6}} fontFamily={'roboto'}>
+            <Box sx={{display:'flex', flexDirection:'column', flexWrap:'wrap', height: "10", padding:2 , paddingBottom:12, borderTop:"1px solid white"}}>
+              <Typography variant="h4"className="subtitle" sx={{flexGrow: 1, textAlign:"center", marginBottom:2}} fontFamily={'roboto'}>
                 CONTACT
               </Typography>
               <Box sx={{display:"grid", gridTemplate: " auto auto / auto auto",gap:'16px', justifyContent:"center"}}>

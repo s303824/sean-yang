@@ -4,7 +4,7 @@ import '../App.css';
 
 function Education_Skills(){
     return(
-        <Box sx={{display:"block", flexDirection:"column" , alignContent:"space-between", px:4, py:1, borderTop: '1px solid white', borderBottom: '1px solid white'}}>
+        <Box sx={{display:"block", flexDirection:"column" , alignContent:"space-between", px:4, py:2, borderTop: '1px solid white', borderBottom: '1px solid white'}}>
             <Typography variant="h4" className="subtitle" fontFamily={'roboto'}>EDUCATION AND TECHNICAL SKILLS</Typography>
 
             <Box sx={{ flexDirection:"column" , alignContent:"space-between"}}>

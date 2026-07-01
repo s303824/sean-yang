@@ -66,7 +66,7 @@ function Projects(){
      </ul>
 
     return(
-        <Box sx={{display:"flex", flexDirection:"column" , px:4, paddingTop:1, paddingBottom:8, alignContent:"space-between"}}>
+        <Box sx={{display:"flex", flexDirection:"column" , px:4, py:2, paddingBottom:4, alignContent:"space-between"}}>
             <Typography variant="h4"className="subtitle" fontFamily={'roboto'}>PROJECTS</Typography>
             <Typography sx={{marginBottom:2}} fontFamily={'roboto'}>{message}</Typography>
 
