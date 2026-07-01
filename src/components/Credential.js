@@ -56,7 +56,7 @@ export default function Credential({title, subtitle, skills, link}) {
                                 },
                             }}
                             >
-                            <IconButton disableRipple href={link}>
+                            <IconButton disableRipple href={link} target="_blank" rel="noopener noreferrer" >
                                 <FileDownloadIcon sx={{color:"white","&:hover":{color:"gray"}, "&:active":{color:"gray"}}}/>
                             </IconButton>
                         </Tooltip>

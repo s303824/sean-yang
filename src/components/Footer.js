@@ -1,4 +1,4 @@
-import {ButtonGroup, Box, AppBar, IconButton, Typography, Link } from '@mui/material';
+import {Box, Typography, Link } from '@mui/material';
 import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import EmailIcon from '@mui/icons-material/Email';
 import '../App.css';
@@ -14,7 +14,7 @@ function Footer(){
                 CONTACT
               </Typography>
               <Box sx={{display:"grid", gridTemplate: " auto auto / auto auto",gap:'16px', justifyContent:"center"}}>
-                <Link href='mailto:syangcontact@gmail.com'>
+                <Link href='mailto:syangcontact@gmail.com' target="_blank" rel="noopener noreferrer">
                   <Box sx={{display:'flex',flexDirection:"row"}}>
                       <a class="fa fa-email">
                         <EmailIcon/>
@@ -28,10 +28,10 @@ function Footer(){
                 </Box>
                 </Link>
                 
-                <Link href="https://www.linkedin.com/in/sean-yang1/">
+                <Link href="https://www.linkedin.com/in/sean-yang1/" target="_blank" rel="noopener noreferrer">
                   <Box sx={{display:'flex',flexDirection:"row"}}>
 
-                      <a href="https://www.linkedin.com/in/sean-yang1/" class="fa fa-linkedin"/>
+                      <a class="fa fa-linkedin"/>
                     {matches && <Box sx={{px:1,alignContent:"center"}}>
                         <Typography sx={{textAlign:"center", color:"white"}}>
                           https://www.linkedin.com/in/sean-yang1/
@@ -42,9 +42,9 @@ function Footer(){
 
                 </Link>
 
-                <Link href="https://github.com/s303824">
+                <Link href="https://github.com/s303824" target="_blank" rel="noopener noreferrer">
                   <Box sx={{display:'flex',flexDirection:"row"}}>
-                      <a href="https://github.com/s303824" class="fa fa-github fa-inverse"/>
+                      <a class="fa fa-github fa-inverse"/>
                     {matches && <Box sx={{px:1, alignContent:"center"}}>
                         <Typography sx={{textAlign:"center", color:"white"}}>
                           https://github.com/s303824
@@ -55,9 +55,9 @@ function Footer(){
                   </Box>
 
                 </Link>
-                <Link href='https://the-other-other.itch.io/'>
+                <Link href='https://the-other-other.itch.io/' target="_blank" rel="noopener noreferrer">
 <Box sx={{display:'flex',flexDirection:"row"}}>
-                      <a href='https://the-other-other.itch.io/' class="fa fa-itchio">
+                      <a class="fa fa-itchio">
                         <VideogameAssetIcon/>
                       </a>
                     {matches && <Box sx={{px:1,alignContent:"center"}}>

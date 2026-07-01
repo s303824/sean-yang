@@ -18,7 +18,7 @@ function AboutSection(){
                     My name is Sean Yang, a graduate from Stony Brook University with a passion for full-stack web development and game programming. 
                     I love tackling new challenges and you can contact me anytime at the email address above :)
                 </Typography> 
-                <Button href={resume}  sx={{
+                <Button href={resume} target="_blank" rel="noopener noreferrer" sx={{
                     borderRadius: '0%', color: 'white', border:"1px solid white",  cursor: 'pointer !important', width:'256px', my:2, fontFamily:"roboto",
                     '&:hover':{
                         color:"#0c1536",

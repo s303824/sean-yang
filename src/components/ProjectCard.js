@@ -6,15 +6,13 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import '../App.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-import { Dialog, Icon, IconButton } from '@mui/material';
+import { Dialog, IconButton } from '@mui/material';
 
 export default function ProjectCard({title, subtitle, description, list,  page_link, gif, picture}) {
   const matches = useMediaQuery('(min-width:632px)');
-  const isWrap = matches ? "nowrap": "wrap";
   const img_size = matches? "224px": "100%";
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
 
   function onCardEnter(){
@@ -44,7 +42,7 @@ export default function ProjectCard({title, subtitle, description, list,  page_l
                 <img id={title} src={picture} alt='thumbnail' width={img_size} height="200px" className='project-image' />
               </Box>
                   <Box sx={{display:'flex', flexDirection:'row', justifyContent:"space-between"}}>
-                    <a href={page_link} className='linkTitle' >
+                    <a href={page_link} target="_blank" rel="noopener noreferrer" className='linkTitle' >
                       <Typography variant='h5' fontFamily={'roboto'} color={"#c45148"}>
                         {title}
                       </Typography>

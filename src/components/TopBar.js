@@ -14,18 +14,18 @@ function TopBar(){
               
                 <ButtonGroup sx={{ margin:2}}>
                     <IconButton >
-                      <a href='mailto:syangcontact@gmail.com' class="fa fa-email">
+                      <a href='mailto:syangcontact@gmail.com' class="fa fa-email" target="_blank" rel="noopener noreferrer">
                         <EmailIcon/>
                       </a>
                     </IconButton>
                     <IconButton>
-                      <a href="https://www.linkedin.com/in/sean-y-430595124/" class="fa fa-linkedin"/>
+                      <a href="https://www.linkedin.com/in/sean-y-430595124/" class="fa fa-linkedin" target="_blank" rel="noopener noreferrer"/>
                     </IconButton>
                     <IconButton>
-                      <a href="https://github.com/s303824" class="fa fa-github"/>
+                      <a href="https://github.com/s303824" class="fa fa-github" target="_blank" rel="noopener noreferrer"/>
                     </IconButton>
                     <IconButton >
-                      <a href='https://the-other-other.itch.io/' class="fa fa-itchio">
+                      <a href='https://the-other-other.itch.io/' class="fa fa-itchio" target="_blank" rel="noopener noreferrer">
                         <VideogameAssetIcon/>
                       </a>
                     </IconButton>
