@@ -73,7 +73,7 @@ function Projects(){
             <Box sx={content}>
                 <ProjectCard title={"All Terrain Armor"} gif={ATA_clip} picture={ATA} subtitle={"Game Programmer"} description={ata_description} list={ata_list} page_link={'https://alimen6.itch.io/all-terrain-armor'} />
                 <ProjectCard title={"Devil's Advocate"} gif={DA_clip} picture={DA} subtitle={"Game Programmer"} description={da_description} list={da_list} page_link={'https://spectradev.itch.io/devilsadvocate'}/>
-                <ProjectCard title={"Tileslate"} gif={TS} picture={TS} subtitle={"Game Programmer"} description={ts_description} list={ts_list} page_link={'https://github.com/s303824/Map-Editor-Project/tree/master'}/>
+                <ProjectCard title={"Tileslate"} gif={TS} picture={TS} subtitle={"Full-Stack Developer"} description={ts_description} list={ts_list} page_link={'https://github.com/s303824/Map-Editor-Project/tree/master'}/>
                 <ProjectCard title={"Us and Them"} gif={UT_clip} picture={UT} subtitle={"Game Programmer"} description={ut_description} list={ut_list} page_link={'https://xander1230.itch.io/us-and-them'} />
             </Box>
         </Box>
