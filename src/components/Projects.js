@@ -12,6 +12,8 @@ import TS from '../images/tileslate-logo.png'
 
 import DA_clip from "../images/da_clips.gif"
 import DA from '../images/devil_advocate.png'
+
+import Sting_Pic from '../images/ring.png'
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Projects(){
@@ -38,11 +40,10 @@ function Projects(){
     
     const da_list = 
     <ul>
-        <li>Created a custom dialogue manager that handled dialogue and could emit custom modular 
-            signals for in-game events such as character sounds & animations, entering/leaving of sprites on screen, visual effects and camera cuts</li>
+        <li>Created a custom dialogue manager that supported scripted events, branching conversations, and character animations</li>
         <li>Organized 2D level layout</li>
         <li>Made particle effects using Godot engine systems</li>
-        <li>Implemented the UI / menu including settings</li>
+        <li>Implemented the UI and menu features including visual/audio settings</li>
     </ul>
 
     const ts_description = "A full-stack web application built with a small team for capstone project that served"+
@@ -51,7 +52,7 @@ function Projects(){
      const ts_list = 
     <ul>
         <li>Utilized MERN stack technology to build a platform for users to collaboratively build and share 2D game maps</li>
-        <li>Developed the back-end code using the MERN stack, facilitating seamless API requests/responses for collaborative tileset and map creation</li>
+        <li>Developed the back-end code using Express and MongoDB, facilitating seamless API requests/responses for collaborative tileset and map creation</li>
         <li>Worked on the front-end UI/UX design using React, streamlining customer experience and shared user content on our platform</li>
     </ul>
 
@@ -60,9 +61,16 @@ function Projects(){
      " and its technical merit impressed the judges including Tom Rothamel, the creator of Ren'Py.";
      const ut_list = 
      <ul>
-         <li>Programmed the entire code base using Ren’Py including multiple concurrent text boxes for different voices, UI/menu implementation, and in-engine animations 
+         <li>Used Ren’Py to implement a compelling visual novel including multiple concurrent text boxes for different voices, UI/menu implementation, and in-engine animations 
          </li>
          <li>Co-wrote the story with a team member</li>
+     </ul>
+
+     const sting_description = "A roguelike take on Punch Out!! as part of the Brainless Game Jam 2026."
+     const sting_list = 
+     <ul>
+        <li>Designed and implemented an event-driven combat system that queued player and enemy actions, enabling combo chains, attack timing, and interruptible animations</li>
+        <li>Engineered reusable gameplay systems with Unity's component architecture to simplify adding new attacks and enemy behavior</li>
      </ul>
 
     return(
@@ -71,6 +79,7 @@ function Projects(){
             <Typography sx={{marginBottom:2}} fontFamily={'roboto'}>{message}</Typography>
 
             <Box sx={content}>
+                <ProjectCard title={"The Sting"} gif = {Sting_Pic} picture={Sting_Pic} subtitle={"Game Programmer"} description={sting_description} list={sting_list} page_link={'https://the-other-other.itch.io/the-sting'}/>
                 <ProjectCard title={"All Terrain Armor"} gif={ATA_clip} picture={ATA} subtitle={"Game Programmer"} description={ata_description} list={ata_list} page_link={'https://alimen6.itch.io/all-terrain-armor'} />
                 <ProjectCard title={"Devil's Advocate"} gif={DA_clip} picture={DA} subtitle={"Game Programmer"} description={da_description} list={da_list} page_link={'https://spectradev.itch.io/devilsadvocate'}/>
                 <ProjectCard title={"Tileslate"} gif={TS} picture={TS} subtitle={"Full-Stack Developer"} description={ts_description} list={ts_list} page_link={'https://github.com/s303824/Map-Editor-Project/tree/master'}/>
